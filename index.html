@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance and Speed Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Distance and Speed Converter</h1>
+
+        <!-- Distance Converter Section -->
+        <div class="converter">
+            <h2>Distance Converter</h2>
+            <input type="number" id="distance-input" placeholder="Enter distance" />
+            <select id="distance-unit">
+                <option value="meters">Meters</option>
+                <option value="feet">Feet</option>
+                <option value="inches">Inches</option>
+            </select>
+            <button onclick="convertDistance()">Convert</button>
+            <div id="distance-output"></div>
+        </div>
+
+        <!-- Speed Converter Section -->
+        <div class="converter">
+            <h2>Speed Converter</h2>
+            <input type="number" id="speed-input" placeholder="Enter speed" />
+            <select id="speed-unit">
+                <option value="kmph">Kilometers per Hour (km/h)</option>
+                <option value="mph">Miles per Hour (mph)</option>
+                <option value="mps">Meters per Second (m/s)</option>
+            </select>
+            <button onclick="convertSpeed()">Convert</button>
+            <div id="speed-output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
